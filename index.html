@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+     <!-- Title Page-->
+     
+
+     <!-- Font special for pages-->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+ 
+     <!-- Main CSS-->
+     <link href="css/main.css" rel="stylesheet" media="all">
+ 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+      <div class="wrapper wrapper--w900">
+          <div class="card card-6">
+              <div class="card-heading">
+                  <h2 class="title">Registation Form</h2>
+              </div>
+              <div class="card-body">
+                  <form method="POST" action="#">
+                      <div class="form-row">
+                          <div class="name">Name</div>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="name"  placeholder="Your Name" required>
+                          </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="name">Age</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" type="number" name="age" required placeholder="Your Age" maxlength="2">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row">
+                      <div class="name">Phone#</div>
+                      <div class="value">
+                          <div class="input-group">
+                              <input class="input--style-6" type="tel" name="phone" required placeholder="Your Phone Number" maxlength="10">
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                      <div class="form-row">
+                          <div class="name">Address</div>
+                          <div class="value">
+                              <div class="input-group">
+                                  <textarea class="textarea--style-6" name="address" required placeholder="Your Address"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="name">Profile Picture</div>
+                          <div class="value">
+                              <div class="input-group js-input-file">
+                                  <input class="input-file" type="file" name="pic" id="file">
+                                  <label class="label--file" for="file">Choose Picture</label>
+                                  <span class="input-file__info">No file chosen</span>
+                              </div>
+                              <div class="label--desc">Upload your Profile picture . Max file size 1Mb</div>
+                          </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="name">Password</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-6" type="password" name="password" required placeholder="Enter password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="name">Confirm Password</div>
+                      <div class="value">
+                          <div class="input-group">
+                              <input class="input--style-6" type="password" name="cpassword" required placeholder="Re-enter password">
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                      <div class="card-footer">
+                        <button class="btn btn--radius-2 btn--blue-2" type="submit">Submit</button>
+                    </div>
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+    
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+  </body>
+</html>
